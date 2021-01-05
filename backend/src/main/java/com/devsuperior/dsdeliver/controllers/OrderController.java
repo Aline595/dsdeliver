@@ -22,4 +22,12 @@ public class OrderController {
 		List<OrderDTO> list = service.findAll();
 		return ResponseEntity.ok().body(list);
 	}
+	
+	@PostMapping
+	public ReposnseEntity<OrderDTO> insert(@RequestBody OrderDTO dto){
+		dto = service.insert(dto);
+		URI uri = ServeletUriComponentsBuilder.fromCurrentRequest().path("/{id}")
+				.buildeAndExpand(dto.getId()).toUri();
+		return ResponseEntity.creted(uri).body(dto);
+	}
 }
