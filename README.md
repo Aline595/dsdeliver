@@ -1,7 +1,7 @@
 ![image](https://user-images.githubusercontent.com/56769013/103669528-35e6cf80-4f57-11eb-84a2-f5e4eb527eb7.png)
 
 <h1 align="center">
-DELIVER - Serviço de entregas
+DS DELIVER - Serviço de entregas
 </h1>
 <h3 align="center">
   <a href="#dog-sobre">Sobre</a>&nbsp;|&nbsp;
