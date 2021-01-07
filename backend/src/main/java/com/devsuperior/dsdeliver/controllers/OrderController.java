@@ -1,5 +1,8 @@
 package com.devsuperior.dsdeliver.controllers;
 
+import java.net.URI;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -29,15 +32,15 @@ public class OrderController {
 	}
 	
 	@PostMapping
-	public ReposnseEntity<OrderDTO> insert(@RequestBody OrderDTO dto){
+	public ResponseEntity<OrderDTO> insert(@RequestBody OrderDTO dto){
 		dto = service.insert(dto);
-		URI uri = ServeletUriComponentsBuilder.fromCurrentRequest().path("/{id}")
-				.buildeAndExpand(dto.getId()).toUri();
-		return ResponseEntity.creted(uri).body(dto);
+		URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}")
+				.buildAndExpand(dto.getId()).toUri();
+		return ResponseEntity.created(uri).body(dto);
 	}
 	
 	@PutMapping("/{id}/delivered")
-	public ReposnseEntity<OrderDTO> setDelivered(@PathVariable Long id){
+	public ResponseEntity<OrderDTO> setDelivered(@PathVariable Long id){
 		OrderDTO dto = service.setDelivered(id);
 		return ResponseEntity.ok().body(dto);
 	}
