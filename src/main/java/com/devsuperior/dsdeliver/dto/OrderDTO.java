@@ -1,7 +1,7 @@
 package com.devsuperior.dsdeliver.dto;
 
 import java.io.Serializable;
-import java.util.Instant;
+import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;

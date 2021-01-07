@@ -1,7 +1,8 @@
 package com.devsuperior.dsdeliver.dto;
 
+import java.io.Serializable;
+
 import com.devsuperior.dsdeliver.entities.Product;
-import com.devsuperior.dsdeliver.entities.Serializable;
 
 public class ProductDTO implements Serializable{
 	
