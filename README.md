@@ -17,6 +17,7 @@ DS DELIVER - Serviço de entregas
 
 ## Versão online
 
+https://dsdeliver-aline.netlify.app/
 
 ## :computer: Tecnologias
 
