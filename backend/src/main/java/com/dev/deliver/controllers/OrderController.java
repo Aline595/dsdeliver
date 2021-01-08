@@ -1,4 +1,4 @@
-package com.devsuperior.dsdeliver.controllers;
+package com.dev.deliver.controllers;
 
 import java.net.URI;
 import java.util.List;
@@ -14,8 +14,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import com.devsuperior.dsdeliver.dto.OrderDTO;
-import com.devsuperior.dsdeliver.services.OrderService;
+import com.dev.deliver.dto.OrderDTO;
+import com.dev.deliver.services.OrderService;
 
 
 @RestController

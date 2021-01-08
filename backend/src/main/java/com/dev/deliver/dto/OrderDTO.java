@@ -1,4 +1,4 @@
-package com.devsuperior.dsdeliver.dto;
+package com.dev.deliver.dto;
 
 import java.io.Serializable;
 import java.time.Instant;
@@ -6,8 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import com.devsuperior.dsdeliver.entities.Order;
-import com.devsuperior.dsdeliver.entities.OrderStatus;
+import com.dev.deliver.entities.Order;
+import com.dev.deliver.entities.OrderStatus;
 
 public class OrderDTO implements Serializable{
 

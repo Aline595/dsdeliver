@@ -1,4 +1,4 @@
-package com.devsuperior.dsdeliver.config;
+package com.dev.deliver.config;
 
 import java.util.Arrays;
 
